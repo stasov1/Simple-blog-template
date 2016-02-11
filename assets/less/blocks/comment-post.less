@@ -1,0 +1,46 @@
+.comment-post {
+  padding: 20px 0;
+
+  &__avatar {
+    float: left;
+    width: 115px;
+    height: 115px;
+    margin: 0 20px 20px 0;
+    border-radius: 50%;
+    background-color: @gray-fadded;
+  }
+
+  &__content {
+    overflow: hidden;
+
+    p {
+      width: 70%;
+      padding: 20px;
+      margin: 15px 0;
+      background-color: @gray-fadded;
+      border-radius: 5px;
+      color: @black-very-light;
+      line-height: 1.5;
+    }
+  }
+
+  &__title {
+    margin-top: 40px;
+    .font-size(@font-l);
+
+    a {
+      text-decoration: none;
+      color: @green;
+    }
+  }
+
+  &__reply {
+    text-decoration: none;
+    color: @green;
+    transition: color .3s ease;
+
+    &:hover {
+      color: darken(@green, 10%);
+    }
+  }
+}

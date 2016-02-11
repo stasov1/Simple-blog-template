@@ -1,0 +1,26 @@
+.comment {
+  &__line {
+    padding: 25px 0;
+    border-bottom: 2px solid @bordered-gray;
+
+    &:first-child {
+      border-top: 1px solid @bordered-gray;
+    }
+  }
+
+  &__line_no-bordered {
+    border: none;
+  }
+
+  &__count {
+    display: inline-block;
+    margin-top: 10px;
+    color: @black-light;
+    font-weight: bold;
+    .font-size(@font-l);
+  }
+
+  &__btn {
+    float: right;
+  }
+}

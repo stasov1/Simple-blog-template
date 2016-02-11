@@ -1,0 +1,486 @@
+/* Main colors
+---------------------------*/
+/* Fonts sizes
+---------------------------*/
+/* Fonts families
+---------------------------*/
+/* max container width
+---------------------------*/
+/* responsive fonts in "em"
+-----------------------------*/
+/* responsive width block
+-----------------------------*/
+/* responsive margin block
+-----------------------------*/
+/* responsive padding block
+-----------------------------*/
+/* All extends
+---------------------------*/
+/* Main fonts page
+-----------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300&subset=latin,cyrillic);
+/* fonts icon
+-----------------------------*/
+@font-face {
+  font-family: 'fontello';
+  src: url('fonts/fontello.eot?66075538');
+  src: url('fonts/fontello.eot?66075538#iefix') format('embedded-opentype'), url('fonts/fontello.woff?66075538') format('woff'), url('fonts/fontello.ttf?66075538') format('truetype'), url('fonts/fontello.svg?66075538#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?66075538#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+.icon-heart:before {
+  content: '\e800';
+}
+/* '' */
+.icon-comment:before {
+  content: '\e801';
+}
+/* '' */
+.icon-down-dir:before {
+  content: '\e802';
+}
+/* '' */
+.icon-right-open:before {
+  content: '\e803';
+}
+/* '' */
+.btn {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 15px 20px;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.28571429em;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+.btn_primary-green {
+  background-color: #3eb3a5;
+  color: #fff;
+}
+.btn_primary-green:hover {
+  background-color: #318d82;
+}
+.btn_full-width {
+  width: 100%;
+}
+.btn_centered {
+  text-align: center;
+}
+.btn_upper {
+  text-transform: uppercase;
+}
+.comment-form__title {
+  color: #272727;
+  font-weight: bold;
+  font-size: 1.71428571em;
+}
+.comment-form__title_centered {
+  text-align: center;
+}
+.comment-form__column-left {
+  float: left;
+  width: 160px;
+  margin-right: 10px;
+  text-align: right;
+}
+.comment-form__column-right {
+  float: right;
+  width: 160px;
+  margin-left: 10px;
+}
+.comment-form__column-center {
+  width: 400px;
+  overflow: hidden;
+}
+.comment-form__row {
+  margin-bottom: 20px;
+}
+.comment-form label {
+  display: inline-block;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 0.85714286em;
+  font-weight: bold;
+  color: #afafaf;
+}
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form textarea {
+  box-sizing: border-box;
+  width: 47%;
+  border: none;
+  outline: none;
+  background-color: #ebebeb;
+  border-radius: 5px;
+  padding: 15px;
+}
+.comment-form input[type="email"] {
+  float: right;
+}
+.comment-form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 20px;
+  resize: vertical;
+}
+.comment-post {
+  padding: 20px 0;
+}
+.comment-post__avatar {
+  float: left;
+  width: 115px;
+  height: 115px;
+  margin: 0 20px 20px 0;
+  border-radius: 50%;
+  background-color: #ebebeb;
+}
+.comment-post__content {
+  overflow: hidden;
+}
+.comment-post__content p {
+  width: 70%;
+  padding: 20px;
+  margin: 15px 0;
+  background-color: #ebebeb;
+  border-radius: 5px;
+  color: #565656;
+  line-height: 1.5;
+}
+.comment-post__title {
+  margin-top: 40px;
+  font-size: 1.71428571em;
+}
+.comment-post__title a {
+  text-decoration: none;
+  color: #3eb3a5;
+}
+.comment-post__reply {
+  text-decoration: none;
+  color: #3eb3a5;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+}
+.comment-post__reply:hover {
+  color: #318d82;
+}
+.comment__line {
+  padding: 25px 0;
+  border-bottom: 2px solid #dfdfdf;
+}
+.comment__line:first-child {
+  border-top: 1px solid #dfdfdf;
+}
+.comment__line_no-bordered {
+  border: none;
+}
+.comment__count {
+  display: inline-block;
+  margin-top: 10px;
+  color: #272727;
+  font-weight: bold;
+  font-size: 1.71428571em;
+}
+.comment__btn {
+  float: right;
+}
+.container {
+  width: 940px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.container_small {
+  width: 740px;
+}
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.copyright {
+  color: #afafaf;
+  font-size: 1.28571429em;
+}
+.copyright a {
+  color: #3eb3a5;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+}
+.copyright a:hover {
+  color: #318d82;
+}
+.g-clearfix::before,
+.g-clearfix::after {
+  content: "";
+  display: table;
+}
+.g-clearfix::after {
+  clear: both;
+}
+.logo {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  margin-left: -123px;
+}
+.logo img {
+  width: 197px;
+  height: 197px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+.main-content {
+  margin: 40px 0 60px;
+}
+.main-nav {
+  border-bottom: 1px solid #dfdfdf;
+}
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.main-nav__item:first-child {
+  margin-right: 80px;
+}
+.main-nav__item:nth-child(3) {
+  margin-left: 35px;
+}
+.main-nav__item_left {
+  float: left;
+}
+.main-nav__item_right {
+  float: right;
+}
+.main-nav__item_current .main-nav__link {
+  color: #3eb3a5;
+}
+.main-nav__item_current .main-nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #3eb3a5;
+}
+.main-nav__link {
+  position: relative;
+  display: block;
+  margin: 28px 0 14px;
+  padding-bottom: 10px;
+  color: #afafaf;
+  font-size: 1.71428571em;
+  text-decoration: none;
+  font-weight: 700;
+}
+.main-nav__link:hover {
+  color: #3eb3a5;
+}
+.page-footer {
+  margin: 20px 0;
+}
+.page-footer_centered {
+  text-align: center;
+}
+.page-header {
+  position: relative;
+}
+.page-header__hero {
+  height: 350px;
+  background: url("img/bg-head.jpg") no-repeat center top;
+  background-size: cover;
+}
+.page {
+  margin: 0;
+  padding: 0;
+  font: 14px "Roboto Slab", serif;
+  line-height: 1.3;
+}
+.post {
+  position: relative;
+  padding-bottom: 38px;
+  margin-bottom: 38px;
+  border-bottom: 1px dashed #dfdfdf;
+}
+.post_no-bottom-bordered {
+  border-bottom: none;
+}
+.post__content {
+  padding-top: 26px;
+  overflow: hidden;
+}
+.post__date {
+  float: left;
+  width: 110px;
+  height: 110px;
+  line-height: 110px;
+  border: 7px solid #dfdfdf;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 2.14285714em;
+  font-weight: 700;
+  background-color: #fff;
+  color: #3eb3a5;
+}
+.post__top-bar {
+  border-bottom: 1px solid #dfdfdf;
+}
+.post__list-link {
+  margin: 0;
+  padding: 10px 0 10px 20px;
+  list-style-type: none;
+  font-size: 1em;
+  color: #c0c0c0;
+}
+.post__list-link-item {
+  display: inline-block;
+  padding-right: 8px;
+  margin-right: 8px;
+  border-right: 1px solid #dfdfdf;
+}
+.post__list-link-item:last-child {
+  border-right: 0;
+}
+.post__list-link-item a {
+  text-decoration: none;
+  color: #c0c0c0;
+}
+.post__list-link-item a i {
+  color: #3eb3a5;
+}
+.post__list-link-item a:hover {
+  color: #3eb3a5;
+}
+.post__list-link-item span {
+  color: #3eb3a5;
+}
+.post span a {
+  text-decoration: none;
+  color: #3eb3a5;
+}
+.post span a:hover {
+  border-bottom: 1px dashed #3eb3a5;
+}
+.post__text {
+  padding-left: 20px;
+}
+.post__text h2 {
+  color: #272727;
+  margin: 20px 0;
+  font-size: 2.14285714em;
+}
+.post__text p {
+  color: #8e8e8e;
+  font-size: 1.14285714em;
+  line-height: 1.5;
+}
+.post__read-more {
+  border-bottom: 1px solid #dfdfdf;
+  color: #3eb3a5;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.post__read-more:hover {
+  border-bottom: none;
+}
+.post__thumb {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px 0;
+}
+.post__tags {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.28571429em;
+  color: #3eb3a5;
+}
+.post__tags a {
+  color: #3eb3a5;
+  text-transform: lowercase;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 16px;
+}
+.post__tags a:hover {
+  text-decoration: underline;
+}
+.post__tags-title {
+  margin-right: 10px;
+  color: #272727;
+}
+.simple_centered {
+  text-align: center;
+}
+.tag-line {
+  margin: 90px 0 40px;
+  color: #afafaf;
+  font-size: 1.28571429em;
+}
+.tag-line_centered {
+  text-align: center;
+}
+.tag-line span {
+  position: relative;
+  padding-bottom: 10px;
+}
+.tag-line span::before,
+.tag-line span::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -17px;
+  width: 34px;
+  height: 1px;
+  background-color: #afafaf;
+}
+.tag-line span::after {
+  bottom: -5px;
+}
