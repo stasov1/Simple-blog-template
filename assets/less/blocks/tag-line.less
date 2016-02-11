@@ -1,0 +1,28 @@
+.tag-line {
+  margin: 90px 0 40px;
+  color: @gray;
+  .font-size(@font-m);
+
+  &_centered {
+    text-align: center;
+  }
+
+  span {
+    position: relative;
+    padding-bottom: 10px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      margin-left: -17px;
+      width: 34px;
+      height: 1px;
+      background-color: @gray;
+    }
+
+    &::after { bottom: -5px; }
+  }
+}

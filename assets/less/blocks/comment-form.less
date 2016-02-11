@@ -1,0 +1,65 @@
+.comment-form {
+  &__title {
+    color: @black-light;
+    font-weight: bold;
+    .font-size(@font-l);
+  }
+
+  &__title_centered {
+    text-align: center;
+  }
+
+  &__column-left {
+    float: left;
+    width: 160px;
+    margin-right: 10px;
+    text-align: right;
+  }
+
+  &__column-right {
+    float: right;
+    width: 160px;
+    margin-left: 10px;
+  }
+
+  &__column-center {
+    width: 400px;
+    overflow: hidden;
+  }
+
+  &__row {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: inline-block;
+    margin-top: 15px;
+    cursor: pointer;
+    .font-size(@font-xs - 2);
+    font-weight: bold;
+    color: @gray;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    box-sizing: border-box;
+    width: 47%;
+    border: none;
+    outline: none;
+    background-color: @gray-fadded;
+    border-radius: 5px;
+    padding: 15px;
+  }
+
+  input[type="email"] {
+    float: right;
+  }
+
+  textarea {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 20px;
+    resize: vertical;
+  }
+}
